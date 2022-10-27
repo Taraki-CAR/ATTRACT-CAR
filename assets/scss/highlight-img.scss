@@ -1,0 +1,82 @@
+.riic-new-engagement-container {
+  .riic-new-engagement {
+    width: 100% !important;
+    display: flex !important;
+    height: 65vh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    &:hover {
+      .riic-new-engagement-img-container {
+        width: calc(50 / 3) !important;
+      }
+    }
+
+    .riic-new-engagement-img-container {
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 25%;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      object-fit: cover !important;
+      transition: all 0.3s;
+      cursor: pointer;
+      height: 65vh;
+      position: relative;
+
+      .riic-engagement-image-details {
+        position: absolute;
+        left: 20px;
+        bottom: 10%;
+        padding: 10px;
+
+        .riic-branding-body {
+          display: none;
+        }
+      }
+
+      &:hover {
+        width: 50% !important;
+
+        .riic-engagement-image-details {
+          .riic-branding-body {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .riic-new-engagement-container {
+    .riic-new-engagement {
+      width: 100% !important;
+      display: flex;
+      height: auto !important;
+      flex-direction: column;
+      // &:hover {
+      // 	.riic-new-engagement-img-container {
+      // 		width: calc(50 / 3) !important;
+      // 	}
+      // }
+
+      .riic-new-engagement-img-container {
+        width: 100%;
+        height: 40vh !important;
+
+        .riic-engagement-image-details {
+          text-align: left;
+          .riic-branding-body {
+            display: block;
+          }
+        }
+
+        &:hover {
+          width: 100% !important;
+          height: 60vh !important;
+        }
+      }
+    }
+  }
+}

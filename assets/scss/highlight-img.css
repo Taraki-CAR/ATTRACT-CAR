@@ -1,0 +1,63 @@
+.riic-new-engagement-container .riic-new-engagement {
+  width: 100% !important;
+  display: flex !important;
+  height: 65vh !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.riic-new-engagement-container .riic-new-engagement:hover .riic-new-engagement-img-container {
+  width: 16.6666666667 !important;
+}
+.riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 25%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  object-fit: cover !important;
+  transition: all 0.3s;
+  cursor: pointer;
+  height: 65vh;
+  position: relative;
+}
+.riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container .riic-engagement-image-details {
+  position: absolute;
+  left: 20px;
+  bottom: 10%;
+  padding: 10px;
+}
+.riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container .riic-engagement-image-details .riic-branding-body {
+  display: none;
+}
+.riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container:hover {
+  width: 50% !important;
+}
+.riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container:hover .riic-engagement-image-details .riic-branding-body {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .riic-new-engagement-container .riic-new-engagement {
+    width: 100% !important;
+    display: flex;
+    height: auto !important;
+    flex-direction: column;
+  }
+  .riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container {
+    width: 100%;
+    height: 40vh !important;
+  }
+  .riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container .riic-engagement-image-details {
+    text-align: left;
+  }
+  .riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container .riic-engagement-image-details .riic-branding-body {
+    display: block;
+  }
+  .riic-new-engagement-container .riic-new-engagement .riic-new-engagement-img-container:hover {
+    width: 100% !important;
+    height: 60vh !important;
+  }
+}
+
+/*# sourceMappingURL=highlight-img.css.map */
