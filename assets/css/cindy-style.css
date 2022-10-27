@@ -1,0 +1,370 @@
+/* || Font Family */
+/* font-family: 'Exo 2', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* || Helper Class */
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-title {
+    color: #013200;
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 65px;
+    margin: 0 0 20px;
+}
+
+.section-content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+/* || Site Header */
+.site-header {
+    background-color: rgba(0, 0, 0, 69%);
+    min-height: 96px;
+    padding: 15px 60px;
+}
+
+.site-header .inner-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header .logo-container {
+    align-items: center;
+    display: flex;
+}
+
+.site-header .logo-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+/* || Main Navigation */
+.site-navigation ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.site-navigation .nav-link {
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.site-navigation .nav-link:hover {
+    color: #4163DE;
+}
+
+
+/* || RIIC Section */
+.riic-section {
+    background: url('../images/diagonal-dark-background.png') center top;
+    background-size: 100% 100%;
+    margin-top: -96px;
+}
+
+.riic-section .inner-container {
+    display: flex;
+    gap: 20px;
+    padding: 125px 70px 100px;
+}
+
+.riic-section .logo-container {
+    align-self: center;
+}
+
+.riic-section .section-content,
+.riic-section .section-title {
+    color: #fff;
+}
+
+.riic-section .section-content p {
+    text-align: justify;
+}
+
+/* || Cordillera Brand Section */
+.cordillera-brand-section {
+    margin: 45px 0 100px;
+    text-align: center;
+}
+
+.cordillera-brand-section .inner-container {
+    max-width: 960px;
+}
+
+.cordillera-brand-section img {
+    width: 100%;
+}
+
+/* || Focused Industries Section */
+.focused-industries-section {
+    background: url('../images/diagonal-green-background.png') center bottom;
+    background-size: 100% 100%;
+    padding-bottom: 100px;
+}
+
+.focused-industries-section .section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.focused-industries-section .cards-container {
+    display: flex;
+    gap: 50px;
+}
+
+.focused-industries-section .cards-container .card {
+    background-color: #E9E9E9;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    /* flex: 1 1 0%; */
+    padding: 20px 15px;
+    text-align: center;
+    transition: 0.3s ease;
+    width: 25%;
+}
+
+.focused-industries-section .cards-container .card:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.focused-industries-section .cards-container .card-title {
+    color: #013200;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.focused-industries-section .cards-container .card-text {
+    margin-bottom: 0;
+}
+
+/* || Project Management Section */
+.project-management-section {
+    margin: 60px auto;
+}
+
+.project-management-section .content-image {
+    width: 100%;
+}
+
+/* || About Us Section */
+.about-us-section .section-content {
+    display: flex;
+}
+
+.about-us-section .section-content-left {
+    width: 40%;
+}
+
+.about-us-section .section-content-right {
+    width: 60%;
+}
+
+.about-us-section .logos-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.about-us-section .logos-container img {}
+
+/* || Why Taraki Section */
+.why-taraki-section .inner-container {
+    background-color: #E9E9E9;
+    padding: 0;
+}
+
+.why-taraki-section .section-content {
+    display: flex;
+}
+
+.why-taraki-section .section-content-left {
+    width: 40%;
+}
+
+.why-taraki-section .section-content-left img {
+    height: 100%;
+    width: 100%;
+}
+
+.why-taraki-section .section-content-right {
+    padding: 30px;
+    width: 60%;
+}
+
+.why-taraki-section .section-content-right .list-title {
+    margin-bottom: 0;
+}
+
+.why-taraki-section .section-content-right ul {
+    margin-top: 0;
+    padding-left: 24px;
+}
+
+.why-taraki-section .section-content-right ul li {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* || Site Footer */
+.site-footer {
+    background-color: #211F1F;
+    margin-top: 60px;
+    min-height: 302px;
+}
+
+/* || Media Queries */
+@media only screen and (max-width: 1300px) {
+    .about-us-section {
+        margin-bottom: 30px;
+    }
+
+    .about-us-section .logos-container {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-title {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .site-header .inner-container {
+        flex-direction: column;
+    }
+
+    .focused-industries-section .cards-container {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .focused-industries-section .cards-container .card {
+        margin: 20px 2.5%;
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section-title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .section-content p {
+        font-size: 18px;
+    }
+
+    .site-navigation ul {
+        gap: 20px;
+    }
+
+    .riic-section {
+        margin-top: 0;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .riic-section .inner-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .focused-industries-section {
+        padding-bottom: 30px;
+    }
+
+    .about-us-section .section-content {
+        flex-wrap: wrap;
+    }
+
+    .about-us-section .section-content-left,
+    .about-us-section .section-content-right {
+        width: 100%;
+    }
+
+    .about-us-section .logos-container {
+        display: flex;
+    }
+
+    .about-us-section .logos-container img {
+        width: 33.33%;
+    }
+
+    .why-taraki-section .section-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .why-taraki-section .section-content-left,
+    .why-taraki-section .section-content-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .site-header .logo-container {
+        flex-direction: column;
+    }
+
+    .site-header .logo-text {
+        margin-top: 10px;
+    }
+
+    .site-header .logo-text br {
+        display: none;
+    }
+
+    .site-navigation .nav-link {
+        font-size: 18px;
+    }
+
+    .focused-industries-section {
+        background-color: #1B5C3E;
+        background-image: none;
+        padding-top: 30px;
+    }
+
+    .focused-industries-section .section-title {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .focused-industries-section .cards-container .card {
+        margin: 20px auto;
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {}
